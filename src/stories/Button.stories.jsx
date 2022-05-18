@@ -11,7 +11,7 @@ export default {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/proto/JklqB03MIk13CQnm56yznQ/Untitled?node-id=18%3A13&scaling=min-zoom&page-id=0%3A1'
+      url: 'https://www.figma.com/file/JklqB03MIk13CQnm56yznQ/Storybook-integration?node-id=18%3A5'
    }
   }
 };
