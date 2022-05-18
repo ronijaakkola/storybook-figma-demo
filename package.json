@@ -28,7 +28,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "chromatic": "npx chromatic --project-token=2057d3ee9802"
   },
   "eslintConfig": {
     "extends": [
@@ -70,6 +71,7 @@
     "@storybook/testing-react": "^1.2.3",
     "chromatic": "^6.5.4",
     "msw": "^0.36.8",
-    "msw-storybook-addon": "^1.6.0"
+    "msw-storybook-addon": "^1.6.0",
+    "storybook-addon-designs": "^6.2.1"
   }
 }

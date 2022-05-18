@@ -8,6 +8,12 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/proto/JklqB03MIk13CQnm56yznQ/Untitled?node-id=18%3A13&scaling=min-zoom&page-id=0%3A1'
+   }
+  }
 };
 
 const Template = (args) => <Button {...args} />;
@@ -15,22 +21,5 @@ const Template = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Button',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
   label: 'Button',
 };

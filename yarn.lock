@@ -2587,6 +2587,21 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@figspec/components@^1.0.0":
+  "integrity" "sha512-UvnEamPEAMh9HExViqpobWmX25g1+soA9kcJu+It3VerMa7CeVyaIbQydNf1Gys5v/rxJVdTDRgQ7OXW2zAAig=="
+  "resolved" "https://registry.npmjs.org/@figspec/components/-/components-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "lit" "^2.1.3"
+
+"@figspec/react@^1.0.0":
+  "integrity" "sha512-4TGazTVFG1SJ+mJNzi3HPKnRC8IGBF6J7GR+wXCPTrOhWpRyQOvcyfomiluPUh69lMLs6hsawjz9yVtutyJocQ=="
+  "resolved" "https://registry.npmjs.org/@figspec/react/-/react-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "@figspec/components" "^1.0.0"
+    "@lit-labs/react" "^1.0.2"
+
 "@hapi/address@2.x.x":
   "integrity" "sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ=="
   "resolved" "https://registry.npmjs.org/@hapi/address/-/address-2.1.4.tgz"
@@ -2816,6 +2831,16 @@
     "@types/node" "*"
     "@types/yargs" "^16.0.0"
     "chalk" "^4.0.0"
+
+"@lit-labs/react@^1.0.2":
+  "integrity" "sha512-Sy4RCxTZpTE2TwByjVac6gC7jzr8bCQC6s9bJhhJDKos4ZlN2cqcuVz63n0mpSSr1zxFh+Z0o0VR223l36Y4Ag=="
+  "resolved" "https://registry.npmjs.org/@lit-labs/react/-/react-1.0.4.tgz"
+  "version" "1.0.4"
+
+"@lit/reactive-element@^1.3.0":
+  "integrity" "sha512-nOJARIr3pReqK3hfFCSW2Zg/kFcFsSAlIE7z4a0C9D2dPrgD/YSn3ZP2ET/rxKB65SXyG7jJbkynBRm+tGlacw=="
+  "resolved" "https://registry.npmjs.org/@lit/reactive-element/-/reactive-element-1.3.1.tgz"
+  "version" "1.3.1"
 
 "@mdx-js/loader@^1.6.22":
   "integrity" "sha512-9CjGwy595NaxAYp0hF9B/A0lH6C8Rms97e2JS9d3jVUtILn6pT5i5IV965ra3lIWc7Rs1GG1tBdVF7dCowYe6Q=="
@@ -4394,6 +4419,11 @@
   "version" "0.0.30"
   dependencies:
     "@types/node" "*"
+
+"@types/trusted-types@^2.0.2":
+  "integrity" "sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg=="
+  "resolved" "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.2.tgz"
+  "version" "2.0.2"
 
 "@types/uglify-js@*":
   "integrity" "sha512-7npvPKV+jINLu1SpSYVWG8KvyJBhBa8tmzMMdDoVc2pWUYHN8KIXlPJhjJ4LT97c4dXJA2SHL/q6ADbDriZN+Q=="
@@ -11072,6 +11102,30 @@
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz"
   "version" "1.1.6"
 
+"lit-element@^3.2.0":
+  "integrity" "sha512-HbE7yt2SnUtg5DCrWt028oaU4D5F4k/1cntAFHTkzY8ZIa8N0Wmu92PxSxucsQSOXlODFrICkQ5x/tEshKi13g=="
+  "resolved" "https://registry.npmjs.org/lit-element/-/lit-element-3.2.0.tgz"
+  "version" "3.2.0"
+  dependencies:
+    "@lit/reactive-element" "^1.3.0"
+    "lit-html" "^2.2.0"
+
+"lit-html@^1.4.1 || ^2.0.0", "lit-html@^1.4.1 || ^2.0.0-rc.3", "lit-html@^2.2.0":
+  "integrity" "sha512-cJofCRXuizwyaiGt9pJjJOcauezUlSB6t87VBXsPwRhbzF29MgD8GH6fZ0BuZdXAAC02IRONZBd//VPUuU8QbQ=="
+  "resolved" "https://registry.npmjs.org/lit-html/-/lit-html-2.2.2.tgz"
+  "version" "2.2.2"
+  dependencies:
+    "@types/trusted-types" "^2.0.2"
+
+"lit@^2.0.0", "lit@^2.1.3":
+  "integrity" "sha512-eN3+2QRHn/erxYB88AXiiRgQA6RltE9MhzySCwX+ACOxA/MLWN3VdXvcbZD9PN09zmUwlgzDvW3T84YWj2Sa0A=="
+  "resolved" "https://registry.npmjs.org/lit/-/lit-2.2.2.tgz"
+  "version" "2.2.2"
+  dependencies:
+    "@lit/reactive-element" "^1.3.0"
+    "lit-element" "^3.2.0"
+    "lit-html" "^2.2.0"
+
 "load-json-file@^2.0.0":
   "integrity" "sha1-eUfkIUmvgNaWy/eXvKq8/h/inKg="
   "resolved" "https://registry.npmjs.org/load-json-file/-/load-json-file-2.0.0.tgz"
@@ -13972,7 +14026,7 @@
     "use-composed-ref" "^1.0.0"
     "use-latest" "^1.0.0"
 
-"react@*", "react@^0.14.0 || ^15.0.0-0 || ^16.0.0 || ^17.0.0", "react@^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1", "react@^16.13.1 || ^17.0.0", "react@^16.6.0 || ^17.0.0", "react@^16.8.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.8.4 || ^17.0.0", "react@^17.0.1", "react@>= 0.14.0", "react@>=16.12.0", "react@>=16.3.0", "react@>=16.8", "react@>=16.8.0", "react@17.0.1":
+"react@*", "react@^0.14.0 || ^15.0.0-0 || ^16.0.0 || ^17.0.0", "react@^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1", "react@^16.13.1 || ^17.0.0", "react@^16.14.0 || ^17.0.0", "react@^16.6.0 || ^17.0.0", "react@^16.8.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.8.4 || ^17.0.0", "react@^17.0.1", "react@>= 0.14.0", "react@>=16.12.0", "react@>=16.3.0", "react@>=16.8", "react@>=16.8.0", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
   "version" "17.0.1"
@@ -15226,6 +15280,13 @@
   "integrity" "sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw=="
   "resolved" "https://registry.npmjs.org/store2/-/store2-2.12.0.tgz"
   "version" "2.12.0"
+
+"storybook-addon-designs@^6.2.1":
+  "integrity" "sha512-ihsscab8185HnxqTNZlM4TfrCPVsO7AimVA8BapuqT/sfZQF9m5H9C0plT3kbECdIMh2cmzMBF1Tc9ckWRgpWg=="
+  "resolved" "https://registry.npmjs.org/storybook-addon-designs/-/storybook-addon-designs-6.2.1.tgz"
+  "version" "6.2.1"
+  dependencies:
+    "@figspec/react" "^1.0.0"
 
 "stream-browserify@^2.0.1":
   "integrity" "sha512-nX6hmklHs/gr2FuxYDltq8fJA1GDlxKQCz8O/IM4atRqBH8OORmBNgfvW5gG10GT/qQ9u0CzIvr2X5Pkt6ntqg=="
